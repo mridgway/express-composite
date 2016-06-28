@@ -1,0 +1,29 @@
+{
+    "name": "express-composite",
+    "version": "0.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "mocha tests/unit/ --recursive --reporter spec",
+        "cover": "istanbul cover --dir artifacts -- _mocha tests/unit/ --recursive --reporter spec",
+        "lint": "eslint ."
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "chai": "^3.2.0",
+        "eslint": "^2.2.0",
+        "istanbul": "^0.4.2",
+        "mocha": "^2.0.1",
+        "pre-commit": "^1.0.7"
+    },
+    "devEngines": {
+        "node": "4.x || 5.x || 6.x",
+        "npm": "2.x || 3.x"
+    },
+    "pre-commit": [
+        "lint",
+        "test"
+    ],
+    "author": "Michael Ridgway <mridgway@yahoo-inc.com>",
+    "license": "BSD-3-Clause"
+}
